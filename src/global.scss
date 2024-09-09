@@ -35,3 +35,121 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+:root {
+    --ion-color-primary: #FFA726;  
+    --ion-color-secondary: #FFA726;  
+    --ion-color-primary-rgb: 255, 167, 38;
+    --ion-color-secondary-rgb: 255, 235, 59;
+    --ion-color-primary-contrast: #000000;
+    --ion-color-secondary-contrast: #000000;
+    --ion-color-primary-shade: #FFA726;
+    --ion-color-primary-tint: #FFB74D;
+
+  }
+  
+ 
+  ion-button {
+    border-radius: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-left: 90px;
+    margin-right: 90px;
+    background: var(--ion-color-primary);
+    color: var(--ion-color-primary-contrast);
+    
+    &.secondary {
+      background: var(--ion-color-secondary);
+      color: var(--ion-color-secondary-contrast);
+    }
+  
+    &:hover {
+      background: var(--ion-color-primary-tint);
+    }
+  
+    &:focus {
+      box-shadow: 0 0 8px var(--ion-color-primary);
+    }
+  }
+  
+  ion-input {
+    --background: var(--ion-color-secondary-tint);
+    --color: var(--ion-color-secondary-contrast);
+    border-radius: 8px;
+    padding: 10px;
+    
+    &::placeholder {
+      color: var(--ion-color-primary-shade);
+    }
+  
+    &:focus {
+      border: 2px solid var(--ion-color-primary);
+    }
+  }
+  
+  ion-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--ion-color-primary-contrast);
+  }
+  
+  a {
+    color: var(--ion-color-primary);
+    text-decoration: none;
+  
+    &:hover {
+      color: var(--ion-color-primary-tint);
+    }
+  }
+  
+  ion-list-header {
+    font-size: 0.9rem;
+    padding: 1px;
+    border-radius: 7px;
+    text-align: center;
+
+  }
+  
+  .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+  
+  #p1 {
+    
+    padding: 5px;
+    margin-top: 16px;
+    text-align: center;
+    font-weight: bold;
+
+  }
+
+  #p2 {
+    padding: 1px, 40px, 15px, 40px;
+    margin-left: 2px;
+    margin-right: 2PX;
+    text-align: center;
+
+  }
+
+  #cerrar {
+    background-color: #b7b5a6;
+    text-transform: uppercase;
+    margin-left: 110px;
+    margin-right: 110px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #perfilh {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 7px;
+  }

@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="translucent-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <img src="assets/icon/logo_asis.png" alt="Logo" style="height: 30px; vertical-align: middle; margin-right: 10px;">
+      Registro
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title size="large">Registro</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-list>
+  <ion-item>
+    <ion-input label="Nombre" [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Carrera" [(ngModel)]="carrera"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Jornada" [(ngModel)]="jornada"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Correo" [(ngModel)]="correo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Contraseña" [(ngModel)]="pass" type="password"  ></ion-input>
+  </ion-item>
+  
+  <ion-button (click)="registrarse()" expand="block"  color="secondary">Registrarse</ion-button>
+
+ 
+</ion-list>
+</ion-content>

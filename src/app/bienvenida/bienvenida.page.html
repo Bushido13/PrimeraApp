@@ -1,0 +1,75 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <img src="assets/icon/logo_asis.png" alt="Logo" style="height: 30px; vertical-align: middle; margin-right: 10px;">
+      Bienvenida</ion-title>
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+   <div class="ion-padding">
+    
+    <h2 id="mensajeBienvenida" style="text-align: center; opacity: 0;">
+      ¡Bienvenido, querido {{ usuario }}!
+    </h2>
+  </div>
+ 
+ <ion-card>
+  <ion-card-header>
+    <ion-card-title>Perfil</ion-card-title>
+    
+  </ion-card-header>
+
+  <ion-card-content>
+    Revisa tu perfil
+  </ion-card-content>
+
+  <ion-button expand="block" routerLink="/perfil" fill="clear">Perfil</ion-button>
+ 
+</ion-card>
+ 
+ 
+ 
+ 
+  <ion-card>
+  <ion-card-header>
+    <ion-card-title>Registra tu Asistencia</ion-card-title>
+    
+  </ion-card-header>
+
+  <ion-card-content>
+    Para registrar tu asistencia, lee el código Qr que el profesor te mostrará
+  </ion-card-content>
+
+  <ion-button expand="block" fill="clear">Leer Qr</ion-button>
+ 
+</ion-card>
+
+ <ion-card>
+  <ion-card-header>
+    <ion-card-title>Revisa tu asistencia</ion-card-title>
+    
+  </ion-card-header>
+
+  <ion-card-content>
+    Para revisar tu asistencia, pulsa el siguiente link
+  </ion-card-content>
+
+  <ion-button routerLink="/historial" fill="clear">Historial de asistencia</ion-button>
+ 
+</ion-card>
+
+  
+
+</ion-content>
+
+<ion-footer collapse="fade">
+  <ion-toolbar>
+    <ion-button expand="block"  routerLink="/home">Cerrar Sesión</ion-button>
+  </ion-toolbar>
+</ion-footer>

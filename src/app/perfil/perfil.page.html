@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <img src="assets/icon/logo_asis.png" alt="Logo" style="height: 30px; vertical-align: middle; margin-right: 10px;">
+      Perfil</ion-title>
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title size="large">Perfil</ion-title>
+    </ion-toolbar>
+    
+    <img src="assets/icon/perfil.jpg" alt="perfil" style="height: 200px; display: block; margin: 0 auto;">
+  </ion-header>
+  <ion-item>
+    <ion-label>
+      <h1 id="perfilh">Nombre</h1>
+      <p>Alumno 1</p>
+    </ion-label>
+  </ion-item>
+   <ion-item>
+    <ion-label>
+      <h1 id="perfilh" >Carrera</h1>
+      <p>Analista Programador</p>
+    </ion-label>
+  </ion-item>
+   <ion-item>
+    <ion-label>
+      <h1 id="perfilh">Jornada</h1>
+      <p>Vespertino</p>
+    </ion-label>
+  </ion-item>
+  
+</ion-content>
+<ion-footer collapse="fade">
+  <ion-toolbar>
+    <ion-button expand="block"  routerLink="/home">Cerrar Sesión</ion-button>
+  </ion-toolbar>
+</ion-footer>

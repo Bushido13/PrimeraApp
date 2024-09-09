@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <img src="assets/icon/logo_asis.png" alt="Logo" style="height: 30px; vertical-align: middle; margin-right: 10px;">
+      Recupera tu Clave</ion-title>
+      <ion-buttons slot="start" >
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title size="large">Recupera tu Clave</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <p id="p1">¿Olvidaste tu Contraseña?</p>
+
+  <p id="p2">¡No te preocupes! Ingresa tu correo y sigue los pasos para recuperarla.</p>
+
+  <ion-item>
+    <ion-input label="Correo" [(ngModel)]="correo"></ion-input>
+  </ion-item>
+
+   <ion-button (click)="recuperar()" expand="block"  color="secondary">Continuar</ion-button>
+
+</ion-content>
